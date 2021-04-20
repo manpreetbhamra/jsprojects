@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/609f6ba98d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form>
+      <div class="field-name">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="username" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-email inactive">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="email" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-password inactive">
+        <i class="fas fa-key"></i>
+        <input type="password" placeholder="password" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-finish inactive">
+        <i class="fas fa-heart"></i>
+        <p>Thank You.</p>
+        <i class="fas fa-heart"></i>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
