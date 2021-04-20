@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdee9;
+  background-image: linear-gradient(to right, #ffdee9 42%, #b5fffc 97%);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.search {
+  height: 10vh;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  margin-right: 10px;
+  width: 35vw;
+  height: 5vh;
+  text-align: center;
+  font-size: 20px;
+}
+input:focus {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transform: scale(1.03)
+}
+input:hover{
+  transform: scale(1.03);
+}
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.world {
+  border-radius: 10px 0px 0px 10px;
+  flex: 1;
+  justify-content: flex-start;
+  margin-right: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.world:hover,
+.india:hover,
+#result:hover {
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+.india {
+  border-radius: 0px 10px 10px 0px;
+  flex: 1;
+  margin-left: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.world h2,
+p,
+.india h2,
+p,
+#cname h2,
+p {
+  padding: 8px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#result {
+  width: 50%;
+  height: 30vh;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 100px;
+  margin: auto;
+  background: transparent;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 45vh;
+  }
+  .world {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  .india {
+    margin-left: 0px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 5px;
+  }
+  #result {
+    width: 80%;
+    height: 22vh;
+    margin-bottom: 20px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}

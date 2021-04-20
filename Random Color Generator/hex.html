@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Colors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background: #d5cabd">
+    <nav>
+      <div class="nav-center">
+        <h1>Random Colors Generator</h1>
+        <img src="moon.png" alt="" class="logo" id="logo" />
+        <ul class="nav-links">
+          <li><a class="link" href="index.html">SIMPLE</a></li>
+          <li><a class="link" href="hex.html">HEX</a></li>
+          <li><a class="link" href="rgb.html">RGB</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <p>Background color : <span id="result">#D5CABD</span></p>
+    </div>
+    <div class="button">
+      <button id="btn" onclick="generator()">Click Me!!!</button>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+      const hex_num = [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+      ];
+      var color = document.body;
+
+      function generator() {
+        var hex_value = "#";
+        for (var i = 0; i < 6; i++) {
+          var ran = hex_num[Math.floor(Math.random() * hex_num.length)];
+          hex_value += ran;
+        }
+        var color_text = document.getElementById("result");
+        color_text.innerText = hex_value;
+        document.body.style.background = hex_value;
+        console.log(ran);
+        console.log(hex_value);
+      }
+    </script>
+  </body>
+</html>

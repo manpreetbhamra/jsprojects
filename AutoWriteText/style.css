@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+#prof {
+  color: rgb(240, 0, 0);
+  font-family: 'Karla', sans-serif;
+}
+
+#cursor {
+  width: 0.1rem;
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1200ms infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}

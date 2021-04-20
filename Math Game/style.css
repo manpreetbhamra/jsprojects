@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  font-family: "Roboto Mono", monospace;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  margin-top: 150px;
+}
+
+#print{
+  color:rgb(251, 117, 117);
+}
+.box {
+  width: 30%;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  color: black;
+  padding: 15px;
+}
+.resp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#v1,
+#v2 {
+  width: 140px;
+  height: 20px;
+  color: black;
+  text-align: center;
+  font-size: x-large;
+  padding: 20px 10px;
+  background: linear-gradient(to right,#76b852,#8dc26f);
+}
+#v1,
+#v2,
+#opp {
+  margin-top: 10px;
+}
+#opp {
+  padding: 10px;
+  font-size: 2rem;
+}
+#answer {
+  align-items: center;
+  width: 200px;
+}
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px white;
+  animation: move 1s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+#ans input {
+  border: none;
+  background: none;
+  margin-top: 20px;
+  width: 70%;
+  height: 50px;
+  color: #f7d794;
+  font-size: x-large;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+#ans input:focus{
+  outline:none;
+}
+
+.btn {
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  width: 50%;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.btn2 {
+  background-image: linear-gradient(to left, #c4e538, #009432, #c4e538);
+}
+
+.btn:hover {
+  background-position: right;
+}

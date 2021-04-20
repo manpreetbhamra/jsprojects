@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Colors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background: rgb(189, 255, 203)">
+    <nav>
+      <div class="nav-center">
+        <h1>Random Colors Generator</h1>
+        <img src="moon.png" alt="" class="logo" id="logo" />
+        <ul class="nav-links">
+          <li><a class="link" href="index.html">SIMPLE</a></li>
+          <li><a class="link" href="hex.html">HEX</a></li>
+          <li><a class="link" href="rgb.html">RGB</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <p>Background color : <span id="result"> rgb(189, 255, 203)</span></p>
+    </div>
+    <div class="button">
+      <button id="btn" onclick="generator()">Click Me!!!</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      function generator() {
+        c1 = Math.floor(Math.random() * 255);
+        c2 = Math.floor(Math.random() * 255);
+        c3 = Math.floor(Math.random() * 255);
+
+        var color_text = document.getElementById("result");
+        color_text.innerText = "rgb( " + c1 + " , " + c2 + " , " + c3 + " )";
+        document.body.style.background =
+          "rgb( " + c1 + " , " + c2 + " , " + c3 + " )";
+        console.log(c1);
+        console.log(c2);
+        console.log(c3);
+      }
+    </script>
+  </body>
+</html>

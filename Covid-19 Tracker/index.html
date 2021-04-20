@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Tracker</title>
+    <link rel="icon" href="2811482.png" type="image/icon type" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/609f6ba98d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Corona Virus Tracker</h1>
+    </div>
+    <div class="container">
+      <div class="world">
+        <h2>WorldWide</h2>
+        <p>Total Cases: <span id="wcase"></span></p>
+        <p>Total Deaths: <span id="wdeaths"></span></p>
+        <p>Total Recovered: <span id="wrecovered"></span></p>
+      </div>
+      <div class="india">
+        <h2>India</h2>
+        <p>Total Cases: <span id="icase"></span></p>
+        <p>Total Deaths: <span id="ideaths"></span></p>
+        <p>Total Recovered: <span id="irecovered"></span></p>
+      </div>
+    </div>
+    <div class="search">
+      <input type="text" name="" id="search" placeholder="Enter Country Name" />
+      <i class="fas fa-search" id="click"></i>
+    </div>
+    <div id="result">
+      <h2 id="cname">Country</h2>
+      <br />
+      <p>Total Cases: <span id="case"></span></p>
+      <p>Total Deaths: <span id="deaths"></span></p>
+      <p>Total Recovered: <span id="recovered"></span></p>
+    </div>
+    <!-- <script src="flag.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
